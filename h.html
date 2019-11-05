@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>高雄觀光景點交通</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all"
+                data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider"
+                    style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">
+                    交通指南</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">大魯閣草衙道</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="flip">旗津彩虹教堂</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slidedown">棧貳庫</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content4" data-transition="slide">灰灰基地美術館</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content5" data-transition="flip">田寮月世界</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content6" data-transition="slidedown">大東藝術文化中心</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content7" data-transition="slide">衛武營國家藝術文化中心</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content8" data-transition="flip">KUBIC集盒</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content9" data-transition="slidedown">高雄忠烈祠</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 大魯閣草衙道 Page: Content  -->
+    <div id="Content1" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">大魯閣草衙道</div>
+            <div><img src="images/01.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通
+            </h3>
+            <h5>
+                地址：806高雄市前鎮區中安路1之1號  (捷運草衙站2號出口)
+                <br>國道中山高速公路(中山高南下) > 國1 > 由中安路匝道出口 > 經中安路 > 右轉草衙道。
+                <br>台88快速道路(由國道三號或大寮、萬丹、潮州) > 由小港/鳳山交流道出口 > 左轉鳳頂路 > 右轉中安路 > 右轉草衙道。
+                <br>健省道台1縣(由大樹、大寮、九曲堂、萬丹、屏東市) > 行駛中山東路 > 左轉維武路 > 左轉鳳頂路 > 右轉中安路 > 右轉草衙道。
+                <br>縣道183(由仁武、鳥松、鳳山) > 行駛鳳南路 > 右轉和成路 > 經明鳳三路 > 右轉中安路 > 右轉草衙道。
+                <br>台17(南面由林園、東港、新園) > 行駛沿海路 > 左轉中山四路 > 右轉中安路 > 左轉草衙道。
+                <br>台17(北面由鼓山、三民、前金、新興、苓雅、鹽埕、前鎮) > 行駛中山二/三/四路 > 經中山路車行地下道 > 左轉中安路 > 左轉草衙道。
+            </h5>           
+        </div>
+    </div>
+
+    <!-- 旗津彩虹教堂 Page: Content  -->
+    <div id="Content2" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">旗津彩虹教堂</div>
+            <div><img src="images/02.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通 【大眾交通運輸】
+            </h3>
+            <h5>
+                地址：高雄市旗津區旗津三路990號
+                <br>1.高雄火車站前→搭乘2、36號公車→到前鎮站下車→轉35號公車→到海岸公園下車可抵。
+                <br>2.高雄火車站前→搭248號公車→至鼓山輪渡站搭渡輪→轉35號公車→到海岸公園下車可抵。
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                交通 【自行開車】
+            </h3>
+            <h5>
+                中山高（國道1號）：下終點交流道→接漁港北路→左轉新生路→即有路標指示往過港隧道→抵達旗津後直行即可見到海岸公園指示。
+            </h5>
+        </div>
+    </div>
+
+    <!-- 棧貳庫 Page: Content  -->
+    <div id="Content3" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">棧貳庫</div>
+            <div><img src="images/03.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通 【捷運】
+            </h3>
+            <h5>
+                地址：804高雄市鼓山區蓬萊路17號（七賢三路底）
+                <br>橘線西子灣站2號出口→步行約3 分鐘→棧貳庫
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通 【輕軌】
+            </h3>
+            <h5>
+                駁二蓬萊站或哈瑪星站→步行約3 分鐘→棧貳庫
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通 【公車】
+            </h3>
+            <h5>
+                <br>1 .高鐵新左營站搭西城快線客運 至哈瑪星旅運接駁中心→步行 約2分鐘→棧貳庫
+                <br>2.高雄火車站搭248公車至哈瑪星 旅運接駁中心→步行約2分鐘→ 棧貳庫
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通 【開車】
+            </h3>
+            <h5>
+                國道1號下中正交流道→中正路接 五福路→左轉七賢三路→高雄港 牌樓→棧貳庫停車場
+            </h5>
+        </div>
+    </div>
+
+    <!-- 灰灰基地美術館 Page: Content  -->
+    <div id="Content4" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">灰灰基地美術館
+            </div>
+            <div><img src="images/04.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通 
+            </h3>
+            <h5>
+                地址：高雄市新興區民有街71號1Ｆ
+                <br>捷運中央公園站(Ｒ9站)2號出口，步行約10分
+                <br>營業時間：週五 10:00~18:00
+                <br>週六 10:00~19:00．週日 10:00~19:00
+            </h5>
+        </div>
+    </div>
+
+    <!-- 田寮月世界 Page: Content  -->
+    <div id="Content5" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">田寮月世界</div>
+            <div><img src="images/05.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【自行開車】
+            </h3>
+            <h5>
+                地址：823高雄市田寮區月球路38號
+                國道3號-田寮交流道下-省道臺28線
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【大眾運輸】
+            </h3>
+            <h5>
+                搭臺鐵至高雄站下-轉搭高雄客運(往旗山)至月世界站下。
+            </h5>           
+        </div>
+    </div>
+
+    <!-- 大東藝術文化中心 Page: Content  -->
+    <div id="Content6" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">大東藝術文化中心</div>
+            <div><img src="images/06.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通
+            </h3>
+            <h5>
+                地址：高雄市鳳山區光遠路161號
+                <br>高雄捷運橘線大東站【O13】 → 2號出口
+            </h5>            
+        </div>
+    </div>
+
+    <!-- 衛武營國家藝術文化中心 Page: Content  -->
+    <div id="Content7" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">衛武營國家藝術文化中心</div>
+            <div><img src="images/07.jpeg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【自行開車】
+            </h3>
+            <h5>
+                地址：83075高雄市鳳山區三多一路1號
+                <br>1.南下：
+                <br>經國道1號                
+                <br>國道1號高速公路中正交流道下→左轉往鳳山方向→直行中正一路→右轉國泰路二段進入慢車道→衛武營國家藝術文化中心。              
+                <br>經國道3號            
+                <br>國道3號高速公路轉國道10號高速公路→接國道1號高速公路→中正交流道下→左轉往鳳山方向→直行中正一路→右轉國泰路二段進入慢車道→衛武營國家藝術文化中心。
+                <br>2.北上：
+                <br>經國道1號
+                <br>國道1號高速公路三多路交流道下→右轉往鳳山方向→直行三多一路→衛武營國家藝術文化中心
+                <br>經國道3號   
+                <br>國道3號高速公路轉台88快速公路→接國道1號高速公路→三多路交流道下→右轉往鳳山方向→直行三多一路→衛武營國家藝術文化中心
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【捷運】
+            </h3>
+            <h5>
+                橘線「衛武營站(O10)」下車，自6號出口，出口前右手邊即為場館位置。
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【台鐵】
+            </h3>
+            <h5>
+                搭高鐵至「左營站」後轉搭捷運，轉搭方式請參閱「搭捷運」。
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【公車】
+            </h3>
+            <h5>
+                可搭乘高雄市公車52、70至衛武營國家藝術文化中心站。
+                <br>或搭乘50、53A/53B、88、248、橘7A/橘7B/橘8/橘10/橘11、紅21、8001、黃2A/ 黃2B/黃2C至建軍站。
+            </h5>
+        </div>
+    </div>
+
+    <!-- KUBIC集盒 Page: Content  -->
+    <div id="Content8" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">KUBIC集盒</div>
+            <div><img src="images/08.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【捷運】
+            </h3>
+            <h5>
+                地址：高雄市前鎮區復興三路5號。(中華五路及復興三路口IKEA旁
+                <br>捷運紅線「獅甲站」4號出口約走7分鐘。旁邊規劃有停車場
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【輕軌】
+            </h3>
+            <h5>               
+                輕軌捷運「軟體園區站」走約4分鐘。
+            </h5>
+        </div>
+    </div>
+
+    <!-- 高雄忠烈祠 Page: Content  -->
+    <div id="Content9" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>交通</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">高雄忠烈祠</div>
+            <div><img src="images/09.jpg" style="width:100%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【大眾運輸】
+            </h3>
+            <h5>
+                地址：高雄市鼓山區忠義路30號
+                <br>每週二至週日行駛，搭乘56路公車（高雄火車站至壽山動物園）在情人觀景台站下車即可到達高雄市忠烈祠。
+                <br>56路公車預定到站（情人觀景台）時刻，為每週二至週五早上09：04至傍晚18：04，每1小時約有1至2班次；
+                <br> 例假日為早上09：04至傍晚18：04，每1小時約有2至3班次，
+                <br>詳情請洽高雄市公車語音查詢專線（07）7497100代碼56。
+            </h5>
+            <h3 style="font-size:20px; color: blue;">
+                <br>交通【自行開車】
+            </h3>
+            <h5>
+                中山高(國道1號)→接國道10號→往左營走到底→順著路標下翠華路→再接九如四路→遇銘傳路右轉→接鼓山三路可抵。
+            </h5>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>高雄觀光景點附近美食</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all"
+                data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider"
+                    style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">
+                    美食指南</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">大魯閣草衙道</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="flip">旗津彩虹教堂</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slidedown">棧貳庫</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content4" data-transition="slide">灰灰基地美術館</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content5" data-transition="flip">田寮月世界</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content6" data-transition="slidedown">大東藝術文化中心</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content7" data-transition="slide">衛武營國家藝術文化中心</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content8" data-transition="flip">KUBIC集盒</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content9" data-transition="slidedown">高雄忠烈祠</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 大魯閣草衙道 Page: Content  -->
+    <div id="Content1" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">大魯閣草衙道</div>
+            <div><img src="images/food-1.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>大河屋
+            </h3>
+            <h5>
+                店家地址|高雄市前鎮區中安路1之1號3樓
+                <br>聯絡電話|077918838
+                <br>均消價位| $250
+            </h5>
+            <div><img src="images/food-2.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>一番地壽喜燒
+            </h3>
+            <h5>
+                店家地址|高雄市前鎮區中山四路100號3樓
+                <br>聯絡電話|077933833
+                <br>均消價位| $398
+            </h5>
+        </div>
+        <div><img src="images/food-3.jpg" style="width:50%;"></div>
+        <h3 style="font-size:20px; color: blue;">
+            <br>虎次日式炸牛排
+        </h3>
+        <h5>
+            店家地址|高雄市前鎮區中安路1之1號
+            <br>聯絡電話|077919588
+            <br>均消價位| $330
+        </h5>
+    </div>
+    </div>
+
+    <!-- 旗津彩虹教堂 Page: Content  -->
+    <div id="Content2" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">旗津彩虹教堂</div>
+            <div><img src="images/food-4.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>渡船頭海之冰
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區濱海一路76號
+                <br>聯絡電話|075513773
+                <br>均消價位| $90
+            </h5>
+            <div><img src="images/food-5.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>驛站食堂
+            </h3>
+            <h5>
+                店家地址|高雄市三民區天津街2號
+                <br>聯絡電話|073219986
+                <br>均消價位| $300
+            </h5>
+            <div><img src="images/food-6.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>回春堂惡魔珍奶
+            </h3>
+            <h5>
+                店家地址|高雄市前鎮區沱江街23號
+                <br>聯絡電話|073318345
+                <br>均消價位| $65
+            </h5>
+        </div>
+    </div>
+
+    <!-- 棧貳庫 Page: Content  -->
+    <div id="Content3" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">棧貳庫</div>
+            <div><img src="images/food-7.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>PAOPAOFUＮ 泡泡趣
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區蓬萊路17號
+                <br>聯絡電話|0989639869
+                <br>均消價位| $50
+            </h5>
+            <div><img src="images/food-8.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>掌門精釀-義法料理餐廳
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區蓬萊路17號
+                <br>聯絡電話|075517799
+                <br>均消價位| $600
+            </h5>
+            <div><img src="images/food-9.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>小紅麵店
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區蓬萊路17號棧貳庫
+                <br>聯絡電話|075310135
+                <br>均消價位| $150
+            </h5>
+        </div>
+    </div>
+
+    <!-- 灰灰基地美術館 Page: Content  -->
+    <div id="Content4" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">灰灰基地美術館
+            </div>
+            <div><img src="images/food-10.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>娘子韓食-娘子居食屋
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區青海路203號
+                <br>聯絡電話|075526632
+                <br>均消價位| $400
+            </h5>
+            <div><img src="images/food-11.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>山本堂日式拉麵
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區美術南三路78號
+                <br>聯絡電話|075866679
+                <br>均消價位| $250
+            </h5>
+            <div><img src="images/food-12.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>獨品鍋-東南亞風味
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區美術北一街59之2號
+                <br>聯絡電話|075228610
+                <br>均消價位| $350
+            </h5>
+        </div>
+    </div>
+
+    <!-- 田寮月世界 Page: Content  -->
+    <div id="Content5" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">田寮月世界</div>
+            <div><img src="images/food-13.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>月球土雞園
+            </h3>
+            <h5>
+                店家地址|高雄市田寮區崇德村月球路34號
+                <br>聯絡電話|076366624
+            </h5>
+            <div><img src="images/food-14.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>雷達壹品土雞城
+            </h3>
+            <h5>
+                店家地址|高雄市田寮區崗安路100之13號
+                <br>聯絡電話|076361758
+                <br>均消價位| $400
+            </h5>
+        </div>
+    </div>
+
+    <!-- 大東藝術文化中心 Page: Content  -->
+    <div id="Content6" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">大東藝術文化中心</div>
+            <div><img src="images/food-15.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>Zone Café 弄咖啡
+            </h3>
+            <h5>
+                店家地址|高雄市鳳山區光遠路161號
+                <br>聯絡電話|077192102
+                <br>均消價位| $400
+            </h5>
+            <div><img src="images/food-16.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>人生風景 Café
+            </h3>
+            <h5>
+                店家地址|高雄市鳳山區經武路20號
+                <br>聯絡電話|077102007
+                <br>均消價位| $250
+            </h5>
+        </div>
+    </div>
+
+    <!-- 衛武營國家藝術文化中心 Page: Content  -->
+    <div id="Content7" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">衛武營國家藝術文化中心</div>
+            <div><img src="images/food-17.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>Stage 5 衛武營
+            </h3>
+            <h5>
+                店家地址|高雄市鳳山區三多一路一號3樓
+                <br>聯絡電話|077193623
+                <br>均消價位| $700
+            </h5>
+        </div>
+    </div>
+
+    <!-- KUBIC集盒 Page: Content  -->
+    <div id="Content8" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">KUBIC集盒</div>
+            <div><img src="images/food-18.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>PAPAYA泰 泰式料理餐廳
+            </h3>
+            <h5>
+                店家地址|高雄市前鎮區中華五路1111號
+                <br>聯絡電話|075362652
+                <br>均消價位| $220
+            </h5>
+            <div><img src="images/food-19.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>阿惠蔥厚餅
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區明誠三路681號
+                <br>聯絡電話|0952122236
+                <br>均消價位| $60
+            </h5>
+        </div>
+    </div>
+
+    <!-- 高雄忠烈祠 Page: Content  -->
+    <div id="Content9" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>食物</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">高雄忠烈祠</div>
+            <div><img src="images/food-20.jpg" style="width:50%;"></div>
+            <h3 style="font-size:20px; color: blue;">
+                <br>阪城海鮮料理
+            </h3>
+            <h5>
+                店家地址|高雄市鼓山區濱海二路25號
+                <br>聯絡電話|075335556
+                <br>均消價位| $800
+            </h5>           
+        </div>
+    </div>
+
+</body>
+
+</html>

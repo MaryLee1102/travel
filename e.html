@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+        <div is="header" data-role="header" data-position="fixed" data-theme="b">
+            <h3>圖片集</h3>
+            <a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all" data-transition="slide" href="index.html" rel="external">Back</a>
+        </div>
+        <div is="content" role="main" class="ui-content">
+            <ul is="listview" data-role="listview" data-inset="true" style="margin-top:0;">
+                <li is="list-divider" data-role="list-divider" style="text-align:center;font-size:20px; background:-webkit-linear-gradient(#66f,#33a); color:#fff;">高雄景點</li>
+            </ul>
+            <ul is="listview" data-role="listview" data-inset="true" id="hero_list" style="margin:0;">
+                <li is="listview-li">
+                    <a href="#Content1" data-transition="slide">大魯閣草衙道</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content2" data-transition="flip">旗津彩虹教堂</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content3" data-transition="slideup">棧貳庫</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content4" data-transition="slidedown">灰灰基地美術館</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content5" data-transition="pop">田寮月世界</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content6" data-transition="slide">大東藝術文化中心</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content7" data-transition="flip">衛武營國家藝術文化中心</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content8" data-transition="slideup">KUBIC集盒</a>
+                </li>
+                <li is="listview-li">
+                    <a href="#Content9" data-transition="slidedown">高雄忠烈祠</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
+    
+    <!-- 大魯閣草衙道 Page: Content  -->
+    <div id="Content1" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">大魯閣草衙道</div>
+            <div><img src="images/taroko-1.jpg" style="width:50%;"></div>
+            <div><img src="images/taroko-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+    
+    <!-- 旗津彩虹教堂 Page: Content  -->
+    <div id="Content2" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">旗津彩虹教堂</div>
+            <div><img src="images/church-1.jpg" style="width:50%;"></div>
+            <div><img src="images/church-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+    
+    <!-- 棧貳庫 Page: Content  -->
+    <div id="Content3" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">棧貳庫</div>
+            <div><img src="images/Stack library-1.jpg" style="width:50%;"></div>
+            <div><img src="images/Stack library-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+    
+    <!-- 灰灰基地美術館 Page: Content  -->
+    <div id="Content4" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">灰灰基地美術館</div>
+            <div><img src="images/Art Museum-1.jpg" style="width:50%;"></div>
+            <div><img src="images/Art Museum-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+    
+    <!-- 田寮月世界 Page: Content  -->
+    <div id="Content5" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">田寮月世界</div>
+            <div><img src="images/Moon world-1.jpg" style="width:50%;"></div>
+            <div><img src="images/Moon world-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+
+    <!-- 大東藝術文化中心 Page: Content  -->
+    <div id="Content6" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">大東藝術文化中心</div>
+            <div><img src="images/cultural Center-1.jpg" style="width:50%;"></div>
+            <div><img src="images/cultural Center-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+
+    <!-- 衛武營國家藝術文化中心 Page: Content  -->
+    <div id="Content7" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">衛武營國家藝術文化中心</div>
+            <div><img src="images/National art-1.jpg" style="width:50%;"></div>
+            <div><img src="images/National art-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+
+    <!-- KUBIC集盒 Page: Content  -->
+    <div id="Content8" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">KUBIC集盒</div>
+            <div><img src="images/KUBIC-1.jpg" style="width:50%;"></div>
+            <div><img src="images/KUBIC-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+
+    <!-- 高雄忠烈祠 Page: Content  -->
+    <div id="Content9" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h3>Photo</h3>
+            <a class="ui-btn ui-btn-left" href="#home" data-transition="slide" data-direction="reverse">Back</a>
+        </div>
+        <div class="ui-content">
+            <div id="hero" style="font-size:20px; font-weight:bold; width:100%; text-align:center;">高雄忠烈祠</div>
+            <div><img src="images/Kaohsiung Martyr-1.jpg" style="width:50%;"></div>
+            <div><img src="images/Kaohsiung Martyr-2.jpg" style="width:50%;"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

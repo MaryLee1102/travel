@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/weather.js"></script>
+</head>
+<div is="page" id="home" data-role="page" onselectstart="return false">
+    <div is="content" role="main" class="ui-content" onselectstart="return false">
+        <div is="dragable" id="city-name" onselectstart="return false">Kaohsiung</div>
+        <div is="dragable" id="city-temp">
+            <div is="dragable" id="city-temp-c" onselectstart="return false">30.2</div>
+            <div is="dragable" id="city-temp-f" class="temphide" onselectstart="return false">86.4</div>
+        </div>
+        <div is="dragable" id="city-description" onselectstart="return false">It's a beautiful day.</div>
+        <div is="dragable" id="temp-btn-box">
+            <paper-radio-group selected="small" id="temp-change" role="radiogroup">
+                <paper-radio-button name="small" label="Celsius" id="tempbtn-c" checked role="radio" tabindex="0"
+                    aria-checked="false"></paper-radio-button>
+                <paper-radio-button name="medium" label="Fahrenheit" id="tempbtn-f" role="radio" tabindex="0"
+                    aria-checked="false"></paper-radio-button>
+            </paper-radio-group>
+        </div>
+        <div is="dragable" id="wind">
+            <div is="dragable" id="wind1">
+                <div is="dragable" id="wind1_1">WIND</div>
+            </div>
+        </div>
+        <div is="dragable" id="moon">
+            <div is="dragable" id="moon1">
+                <div is="dragable" id="moon1_1">MOON</div>
+            </div>
+        </div>
+        <div is="dragable" id="week">
+            <div is="dragable" id="week-title" class="week-temp" onselectstart="return false">7-day Forecasts</div>
+            <div is="dragable" id="week1" class="week-temp" onselectstart="return false"><i>7/6</i>
+                <h3><i class="week-icon2"></i> clear sky</h3>
+            </div>
+            <div is="dragable" id="week2" class="week-temp" onselectstart="return false"><i>7/7</i>
+                <h3><i class="week-icon2"></i> scattered clouds</h3>
+            </div>
+            <div is="dragable" id="week3" class="week-temp" onselectstart="return false"><i>7/8</i>
+                <h3><i class="week-icon3"></i> shower rain</h3>
+            </div>
+            <div is="dragable" id="week4" class="week-temp" onselectstart="return false"><i>7/9</i>
+                <h3><i class="week-icon2"></i> scattered clouds</h3>
+            </div>
+            <div is="dragable" id="week5" class="week-temp" onselectstart="return false"><i>7/10</i>
+                <h3><i class="week-icon2"></i> scattered clouds</h3>
+            </div>
+            <div is="dragable" id="week6" class="week-temp" onselectstart="return false"><i>7/11</i>
+                <h3><i class="week-icon1"></i> clear sky</h3>
+            </div>
+            <div is="dragable" id="week7" class="week-temp" onselectstart="return false"><i>7/12</i>
+                <h3><i class="week-icon1"></i> clear sky</h3>
+            </div>
+        </div>
+    </div>
+    <div is="dragable" id="menu-panel" style>
+        <div is="dragable" id="menu-title">SETTING</div>
+        <div is="dragable" style="width:100%; margin:20px 0;">
+            <h2>paper-slider 1</h2>
+            <paper-slider min="10" max="200" value="110" style="width:100%;" class="sd"></paper-slider>
+        </div>
+        <div is="dragable" style="width:100%; margin:20px 0;">
+            <h2>paper-slider 2</h2>
+            <paper-slider min="10" max="200" value="110" style="width:100%;" class="sd"></paper-slider>
+        </div>
+        <div is="dragable" style="width:100%; margin:20px 10px; height:26px; padding-right:30px;">
+            <h3>paper-checkbox 1</h3>
+            <div is="dragable" style="float:right;">
+                <paper-checkbox role="checkbox" tabindex="0" aria-checked="false"></paper-checkbox>
+            </div>
+        </div>
+        <div is="dragable" style="width:100%; margin:20px 10px; height:26px; padding-right:30px;">
+            <h3>paper-checkbox 2</h3>
+            <div is="dragable" style="float:right;">
+                <paper-checkbox role="checkbox" tabindex="0" aria-checked="false"></paper-checkbox>
+            </div>
+        </div>
+        <div is="dragable" style="width:100%; margin:20px 10px; height:26px; padding-right:30px;">
+            <h3>paper-checkbox 3</h3>
+            <div is="dragable" style="float:right;">
+                <paper-checkbox role="checkbox" tabindex="0" aria-checked="false"></paper-checkbox>
+            </div>
+        </div>
+        <div is="dragable" style="width:100%; margin:20px 10px; height:26px; padding-right:5px;">
+            <h3>paper-toggle-button</h3>
+            <div is="dragable" style="float:right;">
+                <paper-toggle-button touch-action="pan-y" role="button" aria-pressed="false" tabindex="0">
+                </paper-toggle-button>
+            </div>
+        </div>
+    </div>
+</div>

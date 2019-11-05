@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name=description content="經緯度轉換及世界各地景點sample" />
+	<meta name=keywords content="大魯閣草衙道,旗津彩虹教堂,棧貳庫,灰灰基地美術館,田寮月世界,大東藝術文化中心,衛武營國家藝術文化中心,KUBIC集盒" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<style>
+	table {
+		font-size: 9pt;
+	}
+
+	input,
+	select {
+		font: 9pt "Arial";
+		margin: 1px;
+		border: 1px solid;
+	}
+
+	.mycontent {
+		background: #eeeeee;
+		padding: 3px;
+	}
+</style>
+<script type="text/javascript">
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-438841-7']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+</script>
+</head>
+
+<body onload="gotoplace(0);">
+	<script>
+
+		var places = new Array;
+		places[0] = "大魯閣草衙道,22.573178,120.328661";
+		places[1] = "旗津彩虹教堂,22.591442,120.284757";
+		places[2] = "棧貳庫,22.621877,120.274941";
+		places[3] = "灰灰基地美術館,22.623232,120.305585";
+		places[4] = "田寮月世界,22.883540,120.351467";
+		places[5] = "大東藝術文化中心,22.621970,120.363930";
+		places[6] = "衛武營國家藝術文化中心,22.628369,120.342817";
+		places[7] = "KUBIC集盒,22.615142,120.304961";
+		places[8] = "高雄忠烈祠,22.622554,120.285836";
+
+
+
+
+
+		function gotoplace(i) {
+
+			var lat, lon;
+			var pdata = places[i].split(",");
+			lat = pdata[1];
+			lon = pdata[2];
+			document.getElementById("lat").value = lat;
+			document.getElementById("lon").value = lon;
+
+			convert(1);
+			navigatemap();
+		}
+		function navigatemap() {
+			document.getElementById("gmframe").src = "https://maps.google.com/?output=embed&q=" + document.getElementById("lat").value + "," + document.getElementById("lon").value;
+		}
+		function convert(p) {
+			// p = 1 from lat to lat1,lat2,lat3 and from lon to lon1,lon2,lon3
+			// p = 2 back
+			var lat, lat1, lat2, lat3, lon, lon1, lon2, lon3;
+			if (p == 1) {
+				lat = document.getElementById("lat").value;
+				lon = document.getElementById("lon").value;
+				// check N/S +/-
+				if (lat < 0) {
+					lat = -lat;
+					document.getElementById("lato").options[1].selected = true;
+				}
+				else {
+					document.getElementById("lato").options[0].selected = true;
+				}
+				// check E/W +/-
+				if (lon < 0) {
+					lon = -lon;
+					document.getElementById("lono").options[1].selected = true;
+				}
+				else {
+					document.getElementById("lono").options[0].selected = true;
+				}
+				lat2 = lat % 1;
+				lat1 = lat - lat2;
+				lat2 *= 60;
+				lat3 = lat2 % 1;
+				lat2 = lat2 - lat3;
+				lat3 *= 60;
+				document.getElementById("lat1").value = lat1;
+				document.getElementById("lat2").value = lat2;
+				document.getElementById("lat3").value = lat3;
+				lon2 = lon % 1;
+				lon1 = lon - lon2;
+				lon2 *= 60;
+				lon3 = lon2 % 1;
+				lon2 = lon2 - lon3;
+				lon3 *= 60;
+				document.getElementById("lon1").value = lon1;
+				document.getElementById("lon2").value = lon2;
+				document.getElementById("lon3").value = lon3;
+			}
+			else {
+				lat1 = document.getElementById("lat1").value;
+				lat2 = document.getElementById("lat2").value;
+				lat3 = document.getElementById("lat3").value;
+				lat = (Math.round(lat1) + lat2 / 60 + lat3 / 3600) * document.getElementById("lato").value;
+				document.getElementById("lat").value = lat;
+				lon1 = document.getElementById("lon1").value;
+				lon2 = document.getElementById("lon2").value;
+				lon3 = document.getElementById("lon3").value;
+				lon = (Math.round(lon1) + lon2 / 60 + lon3 / 3600) * document.getElementById("lono").value;
+				document.getElementById("lon").value = lon;
+			}
+		}
+	</script>
+	<div is="page" id="home" data-role="page" style="background:-webkit-linear-gradient(rgb(8, 8, 8),rgb(8, 8, 0))">
+		<div is="header" data-role="header" data-position="fixed" data-theme="b">
+			<h3>景點周遭加油站</h3>
+			<a class="ui-btn ui-btn-left  ui-btn-icon-left ui-icon-home ui-btn-icon-notext ui-corner-all"
+				data-transition="slide" href="index.html" rel="external">Back</a>
+		</div>
+		<div style="float: left; width: 640px;" class="mycontent">
+			<form id="f1">
+				<table border=0 width=640>
+					<tr>
+						<td width=70>預設地點: </td>
+						<td>
+							<input type=button onclick="gotoplace(0);" value="大魯閣草衙道">
+							<input type=button onclick="gotoplace(1);" value="旗津彩虹教堂">
+							<input type=button onclick="gotoplace(2);" value="棧貳庫">
+							<input type=button onclick="gotoplace(3);" value="灰灰基地美術館">
+							<input type=button onclick="gotoplace(4);" value="田寮月世界">
+							<input type=button onclick="gotoplace(5);" value="大東藝術文化中心">
+							<input type=button onclick="gotoplace(6);" value="衛武營國家藝術文化中心">
+							<input type=button onclick="gotoplace(7);" value="KUBIC集盒">
+							<input type=button onclick="gotoplace(8);" value="高雄忠烈祠">
+						</td>
+					</tr>
+				</table>
+				<table border=0 style="background: pink;" width=250>
+					<tr>
+						<td>緯度</td>
+						<td><input type=text id=lat size=17 value="25.033493"></td>
+					</tr>
+					<tr>
+						<td>經度</td>
+						<td><input type=text id=lon size=17 value="121.564101"></td>
+					</tr>
+				</table>
+				<table border=0>
+					<tr>
+						<td><input type=button onclick="convert(2);" value="↑"><input type=button onclick="convert(1);"
+								value="↓"></td>
+					</tr>
+				</table>
+				<table border=0 style="background: lightblue;" width=250>
+					<tr>
+						<td>緯度</td>
+						<td><input type=text id=lat1 size=2><input type=text id=lat2 size=2><input type=text id=lat3
+								size=4><select id=lato>
+								<option value=1>N</option>
+								<option value=-1>S</option>
+							</select></td>
+					</tr>
+					<tr>
+						<td>經度</td>
+						<td><input type=text id=lon1 size=2><input type=text id=lon2 size=2><input type=text id=lon3
+								size=4><select id=lono>
+								<option value=1>E</option>
+								<option value=-1>W</option>
+							</select></td>
+					</tr>
+				</table>
+				<table border=0>
+					<tr>
+						<td><input type=button onclick="navigatemap();" value="show map"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div style="float: left; width: 640px;" class="mycontent">
+			<iframe id="gmframe" width="640" height="480" frameborder="0" scrolling="no" marginheight="0"
+				marginwidth="0"
+				src="https://maps.google.com/?q=25.033493,121.564101&amp;ie=UTF8&amp;output=embed"></iframe>
+		</div>
+		<div style="margin-left: 650px; width: 160px; height: 600px; ">
+			<ins class="scupioadslot" style="display:inline-block;width:160px;height:600px;" data-sca-pub="lQ8FFxEnUSlO"
+				data-sca-web="185" data-sca-category="17" data-sca-cid="17270" data-sca-slot-type="STA"></ins>
+			<script async src="https://img.scupio.com/js/ad.js"></script>
+		</div>
+	</div>
+</body>
+
+</html>
